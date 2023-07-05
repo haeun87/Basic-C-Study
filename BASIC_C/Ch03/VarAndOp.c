@@ -1,7 +1,7 @@
 /*
     Title: Variable and Operator.
     Description: Basic of Operator and Variable.
-    FileName: SimpleAddOne.c
+    FileName: VarAndOp.c
     Modified: July 3rd 2023
     Writer: Haeun Suh
 */

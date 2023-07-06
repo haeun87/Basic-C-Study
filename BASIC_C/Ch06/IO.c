@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 /*
-Chapter 05 Understanding the printf and scanf functions.
+Chapter 06 Understanding the printf and scanf functions.
     * Escape sequences:
         \a, \b, \f, \n, \r, \t, \v, \', \", \?, \\
     * Format specifiers:

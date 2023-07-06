@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 /*
-    Chapter 05 The loop statement that commands repeated execution
+    Chapter 07 The loop statement that commands repeated execution
     * Futher detail will be skipped except practice codes.
 */
 

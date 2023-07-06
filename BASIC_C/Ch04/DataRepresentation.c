@@ -1,8 +1,8 @@
 /*
     Title: Data representation.
-    Description: Understanding the concept of data representation.s
+    Description: Understanding the concept of data representations.
     FileName: DataRepresentation.c
-    Modified: July 3rd 2023
+    Modified: July 5th 2023
     Writer: Haeun Suh
 */
 #include <stdio.h>

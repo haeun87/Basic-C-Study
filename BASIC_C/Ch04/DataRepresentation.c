@@ -109,4 +109,6 @@ int main(void)
     printf("\n");
     bitShift();
     printf("\n");
+
+    return 0;
 }

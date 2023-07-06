@@ -25,15 +25,6 @@ Chapter 05 Constants and Primitive data types.
         float: 6 digits
         double: 15 digits
         long doulbe: 18 digits
-    * Format specifiers:
-        %d: decimal integer(+/-)
-        %f: float
-        %lf: double
-        %c: char - Not recommended (It can read as 'null' or '\n'!)
-        %s: string - Recommended
-        %o: octal integer(+)
-        %x: hexadecimal integer(+)
-        %u: decimal integer(+)
     * Unsigned ~: -n ~ (n-1) => 0 ~ (2n-1)
         => Only available for integer data types.
         => Use MSB to represent data size.
@@ -168,4 +159,6 @@ int main(void)
     printf("\n");
     convDiv();
     printf("\n");
+
+    return 0;
 }

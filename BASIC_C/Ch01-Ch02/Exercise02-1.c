@@ -22,5 +22,6 @@ int main(void)
     printName();
     printf("\n");
     printInfo();
-     return 0;   
+    
+    return 0;   
 }

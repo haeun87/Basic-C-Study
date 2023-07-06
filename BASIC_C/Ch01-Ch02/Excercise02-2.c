@@ -23,5 +23,6 @@ int main(void)
     printInfo();
     printf("\n");
     printCal();
-     return 0;   
+    
+    return 0;   
 }

@@ -18,12 +18,9 @@ void problem2(void)
     int num1, num2;
     printf("Enter Two Decimal integer(1 ~ 9): ");
     scanf("%d %d", &num1, &num2);
-
     int start = (num1 < num2) ? num1: num2;
     int end = (num1 < num2) ? num2: num1;
-
     printf("Mutiplication Table from %d to %d: \n", start, end);
-
     for(start; start<= end; start++){
         for(int i=1; i<10; i++) printf("%d X %d = %d \n", start, i, start*i);
         printf("\n");
@@ -41,11 +38,8 @@ void problem3(void)
     int num1, num2, gcd;
     printf("Enter Two Decimal integer(1 ~ 9): ");
     scanf("%d %d", &num1, &num2);
-
     int min = (num1 < num2) ? num1: num2;
-
     for(int i= 1; i<= min; i++) if(num1%i == 0 && num2%i==0) gcd = i;
-    
     printf("GCD of %d and %d: %d \n", num1, num2, gcd);
     printf("GCD of %d and %d: %d \n", num1, num2, GCD(num1, num2));
 }

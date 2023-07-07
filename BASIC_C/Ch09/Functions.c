@@ -64,21 +64,17 @@ void HowToUseThisProg(void)
 int ReadNum(void)
 {
     int num;
-    
     scanf("%d", &num);
-    
     return num;
 }
 
 void simpeAddFunc(void)
 {
     int result;
-
     result = Add(3, 4);
     printf("Result Add1: %d \n", result);
     result = Add(5, 8);
     printf("Result Add2: %d \n", result);
-
 }
 
 void smartAddFunc(void)
@@ -110,7 +106,6 @@ int GetAbsoValue(int num); // Declae first
 void absoCompare(void)
 {
     int num1, num2;
-
     printf("Enter two integer: ");
     scanf("%d %d", &num1, &num2);
     printf("max(%d, %d) = %d", num1, num2, AbsoCompare(num1, num2));
@@ -131,7 +126,6 @@ int SimpleFuncOne(void)
     int num=10;
     num++;
     printf("SimpleFuncOne num: %d \n", num); // 10
-
     return 0;
 }
 
@@ -140,7 +134,6 @@ int SimpleFuncTwo(void)
     int num1=10, num2=30;
     num1++, num2--;
     printf("num1 & num2: %d %d \n", num1, num2);
-
     return 0;
 }
 
@@ -160,7 +153,6 @@ void anotherLocalVal(void)
         num++;
         printf("Loop %d: local variable num is %d. \n", cnt+1, num);
     }
-
     if(cnt == 3)
     {
         int num = 7; // local variable for if
@@ -172,7 +164,6 @@ void anotherLocalVal(void)
 void valShadowing(void)
 {
     int num=1;
-
     if(num==1)
     {
         int num=7; // variable shadowind occurred!
@@ -235,7 +226,6 @@ void recursiveFunc(void)
     Recursive(3);
 }
 
-
 int Factorial(int num)
 {
     return (num==0) ? 1 : num * Factorial(num-1);
@@ -281,4 +271,3 @@ int main(void)
 
     return 0;
 }
-

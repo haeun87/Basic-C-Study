@@ -9,6 +9,7 @@ int AddToTotal(int num)
     total += num;
     return total;
 }
+
 int main(void)
 {
     int num;

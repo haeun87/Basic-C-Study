@@ -2,7 +2,7 @@
     Title: Conditional statement
     Description: Understanding the concept of the Conditional statement
     FileName: Contitional.c
-    Modified: July 6th 2023
+    Modified: July 7th 2023
     Writer: Haeun Suh
 */
 
@@ -18,13 +18,14 @@
 
 void ifBasic(void)
 {
- int num;
- printf("Enter any integer: ");
- scanf("%d", &num);
+    int num;
 
- if(num < 0) printf("Smaller than 0! \n");
- if(num > 0) printf("Bigger than 0! \n");
- if(num == 0) printf("It is 0!! \n");
+    printf("Enter any integer: ");
+    scanf("%d", &num);
+
+    if(num < 0) printf("Smaller than 0! \n");
+    if(num > 0) printf("Bigger than 0! \n");
+    if(num == 0) printf("It is 0!! \n");
 }
 
 void calOne(void)
@@ -36,11 +37,13 @@ void calOne(void)
         printf("[Menu] (1) ADD (2) SUB (3) MUL (4) DiV (0) Exit \n");
         printf("[SELECT]: ");
         scanf("%d", &opt);
+
         if (opt < 0 || opt > 4) {
             printf("Please select from Menu!! \n");
             continue;
         }
         else if (opt == 0) break;
+
         printf("Enter two real numbers: ");
         scanf("%lf %lf", &num1, &num2);
 
@@ -81,6 +84,7 @@ void mul3mul4(void)
 void ifElseBasic(void)
 {
     int num;
+
     printf("Enter integer: ");
     scanf("%d", &num);
 
@@ -93,8 +97,10 @@ void ifElseBasic(void)
 void ternaryOp(void)
 {
     int num, abs;
+
     printf("Enter integer: ");
     scanf("%d", &num);
+
     abs = num > 0 ? num : num*(-1);
     printf("ABS of %d: %d \n", num, abs);
 
@@ -123,12 +129,13 @@ void mul2mul3(void)
         if( num%2==0 || num%3==0 ) continue;
         printf("%d ", num);
     }
-     printf("END \n");
+    printf("END \n");
 }
 
 void englishSchool(void)
 {
     int num;
+
     printf("Enter integer range[1,5]: ");
     scanf("%d", &num);
 
@@ -205,7 +212,7 @@ void goToBasic(void)
 
 int main(void)
 {
-    /*ifBasic();
+    ifBasic();
     printf("\n");
     calOne();
     printf("\n");
@@ -222,7 +229,7 @@ int main(void)
     englishSchool();
     printf("\n"); 
     advancedEnglishSchool();
-    printf("\n"); */    
+    printf("\n"); 
     goToBasic();
     printf("\n");   
 

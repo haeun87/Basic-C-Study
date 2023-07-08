@@ -18,7 +18,7 @@
       e.g. 64bit => 8byte, 32bit => 4byte (Size of Address)
     * If not initialize the pointer variable, a junk value can be assigned as a result! Therefore:
       => int* ptr1;(x) int* ptr=0; or int* ptr=NULL; (0)
-    * 
+  
     * Futher detail will be skipped except practice codes.
 
 */

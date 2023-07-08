@@ -1,6 +1,6 @@
 /*
     Title: One-dimensional array
-    Description: Understand the basics of arrau.
+    Description: Understand the basics of array.
     FileName: OneDimArray.c
     Modified: July 8th 2023
     Writer: Haeun Suh
@@ -27,7 +27,6 @@
     * The C compiler will determine the end of string with the NULL letter.
     * The scanf function distinguishes data with white spaces.
     * Futher detail will be skipped except practice codes.
-
 */
 
 int arrayAccess(void)

@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 /*
-    Chapter One-dimensional array.
+    Chapter 11 One-dimensional array.
     * Array is a data structure consisting of a collection of elements (values or variables),
       of same memory size, each identified by at least one array index or key. (Wikipedia)
     * C doesn't check array boudaries. Therefore, it will compile normally with out of boundary assignment.

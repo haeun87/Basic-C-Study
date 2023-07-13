@@ -17,7 +17,8 @@
         int (*ptr) [n]
     * An array of pointers: int* whoA[4];
       A pointer of an Array: int (*whoB) [4];
-    * Continue from pp. 382
+    * int (*parr)[n] = int parr[][n] (But these are only equivalent when it comes to declaration!)
+    * *(*(arr+n)+m) == *(arr+n)[m] == *(arr[n]+m) == arr[n][m]
     * Futher detail will be skipped except practice codes.
 */
 
@@ -58,7 +59,7 @@ int twoDArrayPointerOp(void)
     return 0;    
 }
 
-int twoDArrayAndArrayPtr(void)
+int twoDArrayNameAndArrayPtr(void)
 {
     int arr1[2][2] = { {1, 2}, {3, 4} };
     int arr2[3][2] = { {1, 2}, {3, 4}, {5, 6} }; 
@@ -81,14 +82,89 @@ int twoDArrayAndArrayPtr(void)
     return 0;
 }
 
-int 
+int arrPtrAndPtrArr(void)
+{
+    int num1=10, num2=20, num3=30, num4=40;
+    int arr2d[2][4]={1, 2, 3, 4, 5, 6, 7, 8};
+
+    int* whoA[4] = {&num1, &num2, &num3, &num4}; // An array of pointers
+    int (*whoB)[4] = arr2d; // A pointer of an 2D Array
+    int (*whoC) = arr2d[0]; // A pointer of a row of 2D Array
+
+    printf("%d %d %d %d \n", *whoA[0], *whoA[1], *whoA[2], *whoA[3]);
+    for(int i=0; i<2; i++){
+        for(int j=0; j<4; j++) printf("%d ", whoB[i][j]);
+        printf("\n");
+    }
+    for(int k=0; k<4; k++)  printf("%d ", whoC[k]);
+    printf("\n");
+
+    return 0;
+}
+
+void ShowArr2DStyle(int (*arr)[4], int column)
+{
+    for(int i=0; i<column; i++)
+    {
+        for(int j=0; j<4; j++) printf("%d ", arr[i][j]);
+        printf("\n");
+    }
+    printf("\n");
+}
+
+int Sum2DArr(int arr[][4], int column)
+{
+    int sum = 0;
+    for(int i=0; i<column; i++) for(int j=0; j<4; j++) sum += arr[i][j];
+    return sum;
+}
+
+int twoDArrParam(void)
+{
+    int arr1[2][4] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int arr2[3][4] = {1, 1, 1, 1, 3, 3, 3, 3, 5, 5, 5, 5};
+
+    ShowArr2DStyle(arr1, sizeof arr1/ sizeof arr1[0]);
+    ShowArr2DStyle(arr2, sizeof arr2/ sizeof arr2[0]);
+    printf("SUM(arr1): %d \n", Sum2DArr(arr1,  sizeof arr1/ sizeof arr1[0]));
+    printf("SUM(arr2): %d \n", Sum2DArr(arr2,  sizeof arr2/ sizeof arr2[0]));
+
+    return 0;
+}
+
+int twoDArrAccessType(void)
+{
+    int a[3][2] = {{1, 2}, {3, 4}, {5, 6}};
+
+    printf("a[0]: %p \n", a[0]);
+    printf("*(a+0): %p \n", *(a+0));
+
+    printf("a[1]: %p \n", a[1]);
+    printf("*(a+1): %p \n", *(a+1));
+
+    printf("a[2]: %p \n", a[2]);
+    printf("*(a+2): %p \n", *(a+2));
+
+    printf("%d, %d \n", a[2][1], (*(a+2))[1]);
+    printf("%d, %d \n", a[2][1], *(a[2]+1));
+    printf("%d, %d \n", a[2][1], *(*(a+2)+1));
+
+    return 0;    
+}
+
 int main(void)
 {
     twoDArrayAddress();
     printf("\n");
     twoDArrayPointerOp();
     printf("\n");
-    twoDArrayAndArrayPtr();
+    twoDArrayNameAndArrayPtr();
+    printf("\n");
+    arrPtrAndPtrArr();
+    printf("\n");
+    twoDArrParam();
+    printf("\n");
+    twoDArrAccessType();
     printf("\n");
 
     return 0;

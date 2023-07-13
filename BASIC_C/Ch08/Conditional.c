@@ -12,7 +12,7 @@
     * if~else if~else is equivalent to nested form of if~else.
     * goto: A keyword used to move the flow of a program to a desired location.
         => requires a specific label used for positioning.
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 void ifBasic(void)

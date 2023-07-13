@@ -2,7 +2,7 @@
     Title: Multi-dimentional Array and Pointer
     Description: Understand the relationship between a Multi-dimentional Array and a Pointer.
     FileName: PointerMultiDimArray.c
-    Modified: July 10th 2023
+    Modified: July 12th 2023
     Writer: Haeun Suh
 */
 
@@ -19,7 +19,7 @@
       A pointer of an Array: int (*whoB) [4];
     * int (*parr)[n] = int parr[][n] (But these are only equivalent when it comes to declaration!)
     * *(*(arr+n)+m) == *(arr+n)[m] == *(arr[n]+m) == arr[n][m]
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 int twoDArrayAddress(void)

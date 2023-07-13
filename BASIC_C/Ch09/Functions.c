@@ -28,10 +28,8 @@
       another copy of the recursive function will be created and the copy will be executed.
     * For that reason, it might result in the occurrence of a stack overflow in case of very deep recursion, where function copies occupy too much memory.
     * Unlike other functional language, there are no references in C language, 
-    but can be achieve the similiar funcationality by using pointers.
-    
-    * Futher detail will be skipped except practice codes.
-
+      but can be achieve the similiar funcationality by using pointers.
+    * Further detail will be skipped except practice codes.
 */
 
 void Add1(int val);

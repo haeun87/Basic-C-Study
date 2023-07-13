@@ -16,7 +16,7 @@
         => arr[0][0] = 1, arr[0][1]=2, arr[1][0]=3, arr[1][1] = 0
     * When initializing an array, only colum size can be omitted.
         e.g. int arr[][4](O) but int arr[2][] or int arr[][](X) 
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 int twoDimArraySize(void)

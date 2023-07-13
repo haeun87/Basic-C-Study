@@ -31,8 +31,7 @@
         => It is more memory efficient to use pointer rather than to declare another variable!
         => So use '&input' rather than just 'input'!
         => In case of String(or char Array), no need to add '&'.(It is already a pointer variable!)
-    * Futher detail will be skipped except practice codes.
-
+    * Further detail will be skipped except practice codes.
 */
 
 // void ShowArrayElem(int param[], int len)

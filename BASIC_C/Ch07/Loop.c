@@ -9,7 +9,7 @@
 #include <stdio.h>
 /*
     Chapter 07 The loop statement that commands repeated execution
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 void simpleWhile(void)

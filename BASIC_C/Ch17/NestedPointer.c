@@ -20,7 +20,7 @@
     * Practically, an array of pointers is equivalent to a double pointer.
     * Triple pointers, or multiple nested pointers are also available. 
     * Basically, a pointer system provides a way to access variables declared outside the function from within the function. 
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 int doublePointerAccess(void)

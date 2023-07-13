@@ -26,7 +26,7 @@
     * No NULL at the end -> char array, NULL at the end -> String
     * The C compiler will determine the end of string with the NULL letter.
     * The scanf function distinguishes data with white spaces.
-    * Futher detail will be skipped except practice codes.
+    * Further detail will be skipped except practice codes.
 */
 
 int arrayAccess(void)

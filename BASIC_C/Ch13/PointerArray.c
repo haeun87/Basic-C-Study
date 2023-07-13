@@ -31,8 +31,7 @@
     * Compiling below Error will occur when using g++(Should use gcc instead!):
         e.g. char* str1 = "My String"; (pointer to constant) => const char* str = "My String"
     * The printf function acts as: printf(char* str) => printf(pointing address)
-    * Futher detail will be skipped except practice codes.
-
+    * Further detail will be skipped except practice codes.
 */
 
 int arrayNameType(void)

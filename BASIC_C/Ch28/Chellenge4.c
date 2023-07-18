@@ -43,7 +43,7 @@ void problem6(void)
 }
 
 // Problem 7
-void problem6(void)
+void problem7(void)
 {
    
 }

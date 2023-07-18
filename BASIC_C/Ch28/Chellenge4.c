@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /*
     Exercise 28 Chellenge Excercise 4
     * Will be updated * pp.603

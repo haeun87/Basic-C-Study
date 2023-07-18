@@ -13,9 +13,13 @@
     * Will be updated *pp.555
 */
 
+int exercise(void){
+    return 0;
+}
+
 int main(void)
 {
-    firstFileWrite();
+    exercise();
     printf("\n");
   
     return 0;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /*
 Exercise 25-1
 

@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h> // For malloc and free functions
+
 /*
     Chapter 25 Memory management and dynamic memory allocation.
     * Each of the memory space is allocated by the OS.
@@ -40,7 +41,8 @@
         => Should perform a type casting for the actual usage.
         e.g. int* ptr1 = (int*)malloc(sizeof(int));
 */
-// char name[30]; // global variable
+
+char name[30]; // global variable
 
 char* ReadUserName(void)
 {   

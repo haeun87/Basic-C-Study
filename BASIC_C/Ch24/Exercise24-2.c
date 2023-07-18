@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+
 /*
 Exercise 24-2
 */

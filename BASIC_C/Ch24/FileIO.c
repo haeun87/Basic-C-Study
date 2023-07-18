@@ -99,6 +99,7 @@
         e.g. long ftell(FILE* stream);
             => Returns the indicator's current position information.
 */
+
 typedef struct fren
 {
     char name[10];
@@ -410,5 +411,6 @@ int main(void)
     printf("\n");
     tellFileReWrPos();
     printf("\n");    
+
     return 0;
 }
